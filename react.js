@@ -1,8 +1,15 @@
-const user = {
-  firstName: 'Babur',
-  lastName: 'Saburov',
-  job: 'React FE Developer',
-}
+// Components
+import Header from './src/Header'
+import User from './src/User'
+
+import ReactDOM from 'react-dom'
+
+const template = (
+  <>
+    <Header />
+    <User />
+  </>
+)
 
 /**
  * ========================
@@ -15,6 +22,4 @@ const app = document.querySelector('#app')
 const root = ReactDOM.createRoot(app)
 
 // innerHTML
-root.render(button)
-
-// Hi! My name is SABUROV BABUR, I work as a React FE Developer
+root.render(template)
